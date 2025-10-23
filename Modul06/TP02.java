@@ -1,23 +1,17 @@
 import java.util.Scanner;
-
 public class TP02 {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        // Minta user mengetik satu kalimat
-        String kalimat = input.nextLine();
-        input.close();
+    public static void main(final String[] args) {
+        Scanner s = new Scanner(System.in);
+        String kalimat = s.nextLine();
+        String noVokal = tanpaVokal(kalimat);
 
-        // Hapus semua huruf vokal menggunakan method hapusVokal
-        String hasil = hapusVokal(kalimat);
+        System.out.println(noVokal);
 
-        // Tampilkan hasil setelah huruf vokal dihapus
-        System.out.println(hasil);
     }
 
-    // Method untuk menghapus semua huruf vokal
-    private static String hapusVokal(String teks) {
-        // replaceAll() akan mengganti semua huruf vokal dengan string kosong ""
-        return teks.replaceAll("[AIUEOaiueo]", "");
+    private static String tanpaVokal(String kalimat){
+        return kalimat.replaceAll("[aiueoAIUEO]", "");
+        
     }
 }

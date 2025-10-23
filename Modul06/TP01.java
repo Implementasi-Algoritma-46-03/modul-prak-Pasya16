@@ -1,37 +1,31 @@
-import java.util.Scanner; 
-
+import java.util.Scanner;
 public class TP01 {
+
     public static void main(final String[] args) {
-        Scanner input = new Scanner(System.in);
+       //input
+        Scanner s = new Scanner(System.in);
+        double r1 = s.nextDouble();
+        double r2 = s.nextDouble();
+        double r3 = s.nextDouble();
 
-        // Buat user memasukkan 3 suhu dalam Fahrenheit
-        double r1 = input.nextDouble(); 
-        double r2 = input.nextDouble(); 
-        double r3 = input.nextDouble(); 
-        input.close(); 
+        // proses
+        double c1 = f2c(r1);
+        double c2 = f2c(r2);
+        double c3 = f2c(r3);
 
-        // Mengonversi tiap suhu ke Celcius pakai method konversiCelcius
-        double c1 = konversiCelcius(r1);
-        double c2 = konversiCelcius(r2);
-        double c3 = konversiCelcius(r3);
+        double re1 = f2r(r1);
+        double re2 = f2r(r2);
+        double re3 = f2r(r3);
 
-        // Mengonversi tiap suhu ke Reamur pakai method konversiReamur
-        double rC1 = konversiReamur(r1);
-        double rC2 = konversiReamur(r2);
-        double rC3 = konversiReamur(r3);
-
-        // Menampilkan hasil dalam format dua angka di belakang koma
-        System.out.printf("%.2f %.2f %.2f\n", c1, c2, c3); // Cetak hasil Celcius
-        System.out.printf("%.2f %.2f %.2f\n", rC1, rC2, rC3); // Cetak hasil Reamur
+        // Output
+        System.out.printf("Celcius: %.1f %.1f %.1f\n", c1, c2, c3);
+        System.out.printf("Reamur: %.2f %.2f %.2f\n", re1, re2, re3);
     }
 
-    // Method untuk mengubah Fahrenheit ke Celcius
-    private static double konversiCelcius(double f) {
-        return (f - 32) * 5 / 9; // Rumus konversi Fahrenheit ke Celcius
+    private static double f2c(double f2c) {
+        return (f2c - 32) * 5 / 9;
     }
-
-    // Method untuk mengubah Fahrenheit ke Reamur
-    private static double konversiReamur(double f) {
-        return (f - 32) * 4 / 9; // Rumus konversi Fahrenheit ke Reamur
+    private static double f2r(double f2r) {
+        return (f2r - 32) * 4 / 9;
     }
 }
