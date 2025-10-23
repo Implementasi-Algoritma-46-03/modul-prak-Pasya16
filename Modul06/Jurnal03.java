@@ -15,7 +15,7 @@ public class Jurnal03 {
     }
 
     // Method untuk menghitung prosentase ketinggian air
-    private static double prosentase(double t, double h) { 
+    private static double prosentase(double t, double h) {
         return (t / h) * 100;
     }
 
