@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: 
+Nama: PASYA MUHAMMAD RIZKY
 
-NIM : 
+NIM : 607062500047
 
 ## Instruksi
 
