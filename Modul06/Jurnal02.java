@@ -4,7 +4,9 @@ public class Jurnal02 {
 
     // Method untuk mengganti huruf vokal
     public static String vokalKecil(String teks) {
+        //menyimpan jumlah huruf
          int panjang = teks.length();
+         //mengambil panjang teks lalu di modulus 5
          int panjangTeks = panjang % 5;
          switch (panjangTeks) {
             case 0: 

@@ -2,7 +2,7 @@ import java.util.Scanner;//tes
 
 public class Jurnal03 {
 
-    // Method untuk menghitung volume maks air
+    // Method untuk menghitung volume maks tangki
     public static double volumeMax(double r, double h) {
         double PI = 3.14159;
         return PI * r * r * h;
@@ -14,8 +14,8 @@ public class Jurnal03 {
         return PI * r * r * t;
     }
 
-    // Method untuk menghitung prosentase ketinggian air
-    private static double prosentase(double t, double h) {
+    // Method untuk menghitung presentase ketinggian air
+    private static double persentase(double t, double h) {
         return (t / h) * 100;
     }
 
@@ -28,9 +28,9 @@ public class Jurnal03 {
 
         double vMax = volumeMax(r, h);
         double vAir = volumeAir(r, t);
-        double prosentase = prosentase(t, h);
+        double persentase = persentase(t, h);
 
-        System.out.printf("%.2f %.2f %.1f%%", vMax, vAir, prosentase);
+        System.out.printf("%.2f %.2f %.1f%%", vMax, vAir, persentase);
         
         input.close();
     }
