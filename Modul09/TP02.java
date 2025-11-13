@@ -1,10 +1,8 @@
 import java.util.Scanner;
-//update
 
 public class TP02 {
 
     public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
         Scanner in = new Scanner(System.in);
         String kalimat = in.nextLine().toLowerCase();
 
@@ -16,7 +14,6 @@ public class TP02 {
             }
         }
         System.out.println(vokal);
-
 
     }
 }
