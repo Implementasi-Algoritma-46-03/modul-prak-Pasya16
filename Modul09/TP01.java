@@ -14,6 +14,7 @@ public class TP01 {
             }else {
                 System.out.println(angka + " Ganjil");
             }
-        }
-    }
+        }
+
+    }
 }
