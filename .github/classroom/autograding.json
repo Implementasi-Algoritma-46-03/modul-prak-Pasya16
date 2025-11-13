@@ -11,26 +11,6 @@
       "points": 20
     },
     {
-      "name": "Jurnal03a",
-      "setup": "javac Modul09/Jurnal03.java",
-      "run": "java -cp Modul09 Jurnal03",
-      "input": "81",
-      "output": "BUKAN",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 10
-    },
-   {
-      "name": "Jurnal03b",
-      "setup": "javac Modul09/Jurnal03.java",
-      "run": "java -cp Modul09 Jurnal03",
-      "input": "89",
-      "output": "YA",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 10
-    },
-    {
       "name": "Jurnal02a",
       "setup": "javac Modul09/Jurnal02.java",
       "run": "java -cp Modul09 Jurnal02",
@@ -41,9 +21,9 @@
       "points": 10
     },
     {
-      "name": "Jurnal03b",
-      "setup": "javac Modul09/Jurnal03.java",
-      "run": "java -cp Modul09 Jurnal03",
+      "name": "Jurnal02b",
+      "setup": "javac Modul09/Jurnal02.java",
+      "run": "java -cp Modul09 Jurnal02",
       "input": "7",
       "output": "16",
       "comparison": "included",
@@ -51,14 +31,54 @@
       "points": 10
     },
     {
-      "name": "Jurnal03c",
-      "setup": "javac Modul09/Jurnal03.java",
-      "run": "java -cp Modul09 Jurnal03",
+      "name": "Jurnal02c",
+      "setup": "javac Modul09/Jurnal02.java",
+      "run": "java -cp Modul09 Jurnal02",
       "input": "11",
       "output": "36",
       "comparison": "included",
       "timeout": 10,
       "points": 10
+    },
+    {
+      "name": "Jurnal03a",
+      "setup": "javac Modul09/Jurnal03.java",
+      "run": "java -cp Modul09 Jurnal03",
+      "input": "81",
+      "output": "BUKAN",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+   {
+      "name": "Jurnal03b",
+      "setup": "javac Modul09/Jurnal03.java",
+      "run": "java -cp Modul09 Jurnal03",
+      "input": "89",
+      "output": "YA",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Jurnal03c",
+      "setup": "javac Modul09/Jurnal03.java",
+      "run": "java -cp Modul09 Jurnal03",
+      "input": "7",
+      "output": "YA",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Jurnal03d",
+      "setup": "javac Modul09/Jurnal03.java",
+      "run": "java -cp Modul09 Jurnal03",
+      "input": "11",
+      "output": "YA",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
     },
     {
       "name": "TP01a",
