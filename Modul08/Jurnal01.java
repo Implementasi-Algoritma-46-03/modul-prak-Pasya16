@@ -6,6 +6,7 @@ public class Jurnal01 {
         double R = input.nextDouble();
         double N = input.nextDouble();
 
+        // Math.pow artinya 0.5 pangkat
         double sisa = R * Math.pow(0.5, N/ 10.0);
 
         System.out.printf("%.3f\n", sisa);
