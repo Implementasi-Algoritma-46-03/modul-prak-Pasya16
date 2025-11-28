@@ -18,4 +18,3 @@ public class TP03 {
         String[] words = line.split("\\s+");
         System.out.println(words.length);
     }
-}
