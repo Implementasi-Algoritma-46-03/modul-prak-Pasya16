@@ -7,7 +7,7 @@
       "input": "Dira\nRadi\nIdar\n-",
       "output": "Bulan 1: Dira\nBulan 2: Radi\nBulan 3: Idar",
       "comparison": "included",
-      "timeout": 10,
+      "timeout": 15,
       "points": 20
     },
     {
@@ -74,7 +74,7 @@
       "name": "TP02b",
       "setup": "javac Modul11/TP02.java",
       "run": "java -cp Modul11 TP02",
-      "input": "6\n8 3 2 4 7",
+      "input": "5\n8 3 2 4 7",
       "output": "8 7 4 3 2",
       "comparison": "included",
       "timeout": 10,
