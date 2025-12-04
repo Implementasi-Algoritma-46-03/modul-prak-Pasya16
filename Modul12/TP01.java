@@ -1,26 +1,19 @@
 import java.util.Scanner;
-public class TP01 {
 
-    public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
-        Scanner input = new Scanner (System.in);
+public class TP01 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
         int n = input.nextInt();
-        int[][] matrix = new int[n][n];
+        int total = 0;
 
-        for (int i = 0; i < n; i++){
-            for (int j = 0; j <n; j++){
-                matrix[i][j] = input.nextInt();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int nilai = input.nextInt();
+                total += nilai;
             }
         }
 
-        for (int i = 0; i < n; i++){
-            for (int j = n - 1; j >= 0; j--){
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-            }
-
-        input.close();
+        System.out.println(total);
     }
 }
