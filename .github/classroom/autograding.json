@@ -1,124 +1,84 @@
 {
   "tests": [
     {
-      "name": "Jurnal01a",
-      "setup": "javac Modul12/Jurnal01.java",
-      "run": "java -cp Modul12 Jurnal01",
-      "input": "2\n1 2\n3 4",
-      "output": "3 4\n1 2",
+      "name": "Jurnal01",
+      "setup": "javac Modul13/Jurnal01.java",
+      "run": "java -cp Modul13 Jurnal01",
+      "input": "7\nMonitor Meja Kursi Keyboard Bantal Printer Koin",
+      "output": "Printer Monitor Meja Kursi Koin Keyboard Bantal",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 20
     },
     {
-      "name": "Jurnal01b",
-      "setup": "javac Modul12/Jurnal01.java",
-      "run": "java -cp Modul12 Jurnal01",
-      "input": "3\n1 2 3\n4 5 6\n7 8 9",
-      "output": "7 8 9\n4 5 6\n1 2 3",
+      "name": "Jurnal02",
+      "setup": "javac Modul13/Jurnal02.java",
+      "run": "java -cp Modul13 Jurnal02",
+      "input": "7\nMonitor Meja Kursi Keyboard Bantal Printer Koin",
+      "output": "Bantal Keyboard Koin Kursi Meja Monitor Printer",
       "comparison": "included",
       "timeout": 10,
-      "points": 0
-    },
-    {
-      "name": "Jurnal02a",
-      "setup": "javac Modul12/Jurnal02.java",
-      "run": "java -cp Modul12 Jurnal02",
-      "input": "3\n 1 0 0\n1 2 2\n0 0 1",
-      "output": "?",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 10
-    },
-    {
-      "name": "Jurnal02b",
-      "setup": "javac Modul12/Jurnal02.java",
-      "run": "java -cp Modul12 Jurnal02",
-      "input": "3\n1 0 0\n1 2 2\n1 0 0",
-      "output": "O",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 10
+      "points": 20
     },
     {
       "name": "Jurnal03a",
-      "setup": "javac Modul12/Jurnal03.java",
-      "run": "java -cp Modul12 Jurnal03",
-      "input": "5",
-      "output": "1 16 15 14 13\n2 17 24 23 12\n3 18 25 22 11\n4 19 20 21 10\n5 6 7 8 9",
+      "setup": "javac Modul13/Jurnal03.java",
+      "run": "java -cp Modul13 Jurnal03",
+      "input": "7\nMonitor Meja Kursi Keyboard Bantal Printer Koin\nKursi",
+      "output": "Ditemukan di indeks ke-3",
       "comparison": "included",
       "timeout": 10,
       "points": 15
     },
     {
       "name": "Jurnal03b",
-      "setup": "javac Modul12/Jurnal03.java",
-      "run": "java -cp Modul12 Jurnal03",
-      "input": "3",
-      "output": "1 8 7\n2 9 6\n3 4 5",
+      "setup": "javac Modul13/Jurnal03.java",
+      "run": "java -cp Modul13 Jurnal03",
+      "input": "7\nMonitor Meja Kursi Keyboard Bantal Printer Koin\nModul",
+      "output": "Data tidak ditemukan",
       "comparison": "included",
       "timeout": 10,
       "points": 15
     },
     {
-      "name": "TP01a",
-      "setup": "javac Modul12/TP01.java",
-      "run": "java -cp Modul12 TP01",
-      "input": "2\n1 2\n3 4",
-      "output": "10",
+      "name": "TP01",
+      "setup": "javac Modul13/TP01.java",
+      "run": "java -cp Modul13 TP01",
+      "input": "64.38 57.00 65.72 59.05 58.10 60.05 59.03 58.05 66.00 57.51\n65.38 67.00 65.72 58.05 57.10 64.05 69.03 57.05 63.07 57.51",
+      "output": "57.00 57.51 58.05 58.10 59.03 59.05 60.05 64.38 65.72 66.00\n57.05 57.10 57.51 58.05 63.07 64.05 65.38 65.72 67.00 69.03",
       "comparison": "included",
       "timeout": 10,
-      "points": 5
+      "points": 10
     },
     {
-      "name": "TP01a",
-      "setup": "javac Modul12/TP01.java",
-      "run": "java -cp Modul12 TP01",
-      "input": "3\n1 2 3\n4 5 6\n7 8 9",
-      "output": "45",
+      "name": "TP02",
+      "setup": "javac Modul13/TP02.java",
+      "run": "java -cp Modul13 TP02",
+      "input": "64.38 57.00 65.72 59.05 58.10 60.05 59.03 58.05 66.00 57.51\n65.38 67.00 65.72 58.05 57.10 64.05 69.03 57.05 63.07 57.51",
+      "output": "66.00 65.72 64.38 60.05 59.05 59.03 58.10 58.05 57.51 57.00\n69.03 67.00 65.72 65.38 64.05 63.07 58.05 57.51 57.10 57.05",
       "comparison": "included",
       "timeout": 10,
-      "points": 5
+      "points": 10
     },
-    {
-      "name": "TP02a",
-      "setup": "javac Modul12/TP02.java",
-      "run": "java -cp Modul12 TP02",
-      "input": "3\n1 2 3\n4 5 6\n7 8 9\n10 11 12\n13 14 15\n16 17 18",
-      "output": "11 13 15\n17 19 21\n23 25 27",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 5
-    },
-    {
-      "name": "TP02b",
-      "setup": "javac Modul12/TP02.java",
-      "run": "java -cp Modul12 TP02",
-      "input": "2\n5 10\n15 20\n25 30\n14 40",
-      "output": "30 40\n29 60",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 5
-    }, 
     {
       "name": "TP03a",
-      "setup": "javac Modul12/TP03.java",
-      "run": "java -cp Modul12 TP03",
-      "input": "3\n1 2 3\n4 5 6\n7 8 9\n20 21 22\n23 24 25\n26 27 28",
-      "output": "144 150 156\n351 366 381\n558 582 606",
+      "setup": "javac Modul13/TP03.java",
+      "run": "java -cp Modul13 TP03",
+      "input": "10\n89 56 77 52 88 90 95 73 80 53\n52",
+      "output": "Ditemukan di indeks ke-3",
       "comparison": "included",
       "timeout": 10,
-      "points": 5
+      "points": 10
     },
     {
       "name": "TP03b",
-      "setup": "javac Modul12/TP03.java",
-      "run": "java -cp Modul12 TP03",
-      "input": "2\n1 2\n3 4\n5 6\n7 8",
-      "output": "19 22\n43 50",
+      "setup": "javac Modul13/TP03.java",
+      "run": "java -cp Modul13 TP03",
+      "input": "10\n89 56 77 52 88 90 95 73 80 53\n70",
+      "output": "Tidak ditemukan",
       "comparison": "included",
       "timeout": 10,
-      "points": 5
+      "points": 10
     }
   ]
 }
