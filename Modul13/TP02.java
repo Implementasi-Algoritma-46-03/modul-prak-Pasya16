@@ -1,46 +1,45 @@
 import java.util.Scanner;
 
 public class TP02 {
-
-    public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double[] wave1 = new double[10];
-        double[] wave2 = new double[10];
+        double[] a = new double[10];
+        double[] b = new double[10];
 
+        // Input baris 1
         for (int i = 0; i < 10; i++) {
-            wave1[i] = input.nextDouble();
+            a[i] = input.nextDouble();
         }
 
+        // Input baris 2
         for (int i = 0; i < 10; i++) {
-            wave2[i] = input.nextDouble();
+            b[i] = input.nextDouble();
         }
 
-        bubbleSortDescending(wave1);
-        bubbleSortDescending(wave2);
+        bubbleDesc(a);
+        bubbleDesc(b);
 
-        printArray(wave1);
-        printArray(wave2);
+        print(a);
+        print(b);
     }
 
-    public static void bubbleSortDescending(double[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] < arr[j + 1]) {     
-                    double temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+    static void bubbleDesc(double[] x) {
+        for (int i = 0; i < x.length - 1; i++) {
+            for (int j = 0; j < x.length - i - 1; j++) {
+                if (x[j] < x[j + 1]) { 
+                    double temp = x[j];
+                    x[j] = x[j + 1];
+                    x[j + 1] = temp;
                 }
             }
         }
     }
 
-    public static void printArray(double[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-            if (i < arr.length - 1) System.out.print(" ");
+    static void print(double[] x) {
+        for (int i = 0; i < x.length; i++) {
+            System.out.print(x[i]);
+            if (i < x.length - 1) System.out.print(" ");
         }
         System.out.println();
     }
