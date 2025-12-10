@@ -1,45 +1,43 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class TP01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double[] a = new double[10];
-        double[] b = new double[10];
+        double[] wave1 = new double[10];
+        double[] wave2 = new double[10];
 
-        // Input baris 1
         for (int i = 0; i < 10; i++) {
-            a[i] = input.nextDouble();
+            wave1[i] = input.nextDouble();
         }
 
-        // Input baris 2
         for (int i = 0; i < 10; i++) {
-            b[i] = input.nextDouble();
+            wave2[i] = input.nextDouble();
         }
 
-        bubbleAsc(a);
-        bubbleAsc(b);
+        bubbleSortAscending(wave1);
+        bubbleSortAscending(wave2);
 
-        print(a);
-        print(b);
+        printArray(wave1);
+        printArray(wave2);
     }
 
-    static void bubbleAsc(double[] x) {
-        for (int i = 0; i < x.length - 1; i++) {
-            for (int j = 0; j < x.length - i - 1; j++) {
-                if (x[j] > x[j + 1]) {
-                    double temp = x[j];
-                    x[j] = x[j + 1];
-                    x[j + 1] = temp;
+    public static void bubbleSortAscending(double[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    double temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
     }
 
-    static void print(double[] x) {
-        for (int i = 0; i < x.length; i++) {
-            System.out.print(x[i]);
-            if (i < x.length - 1) System.out.print(" ");
+    public static void printArray(double[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.printf("%.2f", arr[i]);
+            if (i < arr.length - 1) System.out.print(" ");
         }
         System.out.println();
     }
