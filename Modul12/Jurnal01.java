@@ -1,27 +1,32 @@
 import java.util.Scanner;
 
 public class Jurnal01 {
-
     public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
+        
         Scanner s = new Scanner(System.in);
-        int N = s.nextInt();
 
+        int N = s.nextInt(); //baca ukuran matriks
+
+        //membuat array 2 dimensi utk nyimpan matriks
         int[][] matriks = new int[N][N];
 
-        for (int i=0; i <N; i++) { //baris
-            for (int j=0; j<N; j++) { //kolom
-                matriks[i][j] = s.nextInt(); //simpan input
+        // mengisi matriks dari input
+        for (int i = 0; i < N; i++) {          // loop baris
+            for (int j = 0; j < N; j++) {      // loop kolom
+                matriks[i][j] = s.nextInt();   // simpan angka ke dalam matriks
             }
         }
 
-        for (int i=N-1; i>=0; i--) {
-            for (int j=0; j<N; j++) {
-                System.out.print(matriks[i][j]);
-                if (j < N -1)
+        // cetak matriks dari baris terakhir ke baris pertama (kebalik)
+        for (int i = N - 1; i >= 0; i--) {     // mulai dari baris paling bawah
+            for (int j = 0; j < N; j++) {      // kolom dari kiri ke kanan
+                System.out.print(matriks[i][j]);  // cetak angkanya
+
+                // beri spasi antar angka, kecuali kolom terakhir
+                if (j < N - 1)
                     System.out.print(" ");
             }
-            System.out.println();     
+            System.out.println();
         }
     }
 }
