@@ -4,8 +4,8 @@ public class Jurnal01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        if (!sc.hasNextInt()) return;//mengecek input int, klo ga ada berhenti.
-        int n = sc.nextInt(); // jumlah data yg dimasukan user
+        if (!sc.hasNextInt()) return;//cek input int, klo ga ada berhenti.
+        int n = sc.nextInt();
         sc.nextLine(); // memasukan data barang 
 
         String[] arr = new String[n]; // membuat array string sebanyak n
@@ -15,12 +15,14 @@ public class Jurnal01 {
         }
 
         // Bagian Insertion Sort Descending
-        for (int i = 1; i < n; i++) { //mulai dari index 1 sampai akhir
-            String key = arr[i]; // menyimpan data sementara
-            int j = i - 1; // indeks yg akan di bandingkan 
+        for (int i = 1; i < n; i++) { //perulangan dimulai dari 1, selama i kurang dari n, i bertambah 1
+            String key = arr[i]; // menyimpan data sementara   
+            int j = i - 1; // variabel j berisi index sebelum i buat pembanding ke sebelah kiri
 
-            while (j >= 0 && arr[j].compareToIgnoreCase(key) < 0) {  // membanding kan data yg di input berdasarkan urutan abjad z - a dri tanda <
-                arr[j + 1] = arr[j]; // kekanan jika data sebelumnya kecil
+            while (j >= 0 && arr[j].compareToIgnoreCase(key) < 0) {  
+            // perulangan bakalan berjalan selama j lebih besar sama dengan 0 dan j lebih kecil dari key
+            // intinya kalo j ada setelah key maka akan di geser ke kanan biar Z-A
+                arr[j + 1] = arr[j]; // geser ke kanan
                 j--; //pindah ke kiri
             }
             arr[j + 1] = key; // untuk memasukan data sementara ke posisi yg benar
